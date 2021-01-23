@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:card_view="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="share"
+            type="com.example.dukaan.models.Share" />
+    </data>
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:background="@color/white"
+        card_view:cardBackgroundColor="?attr/colorSurface"
+        app:cardCornerRadius="@dimen/_5sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_12sdp">
+
+            <com.example.dukaan.ui.customviews.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text='@{(share!=null)?share.title:""}'
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                app:customTypeface="@string/galano_medium" />
+
+            <com.example.dukaan.ui.customviews.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/_5sdp"
+                android:text='@{(share!=null)?share.subTitle:""}'
+                android:textAllCaps="false"
+                app:customTypeface="@string/galano_medium"
+                android:textSize="@dimen/_11sdp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/_15sdp">
+
+                <ImageView
+                    android:id="@+id/ivShare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:src="@drawable/ic_share" />
+
+                <com.example.dukaan.ui.customviews.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/ivShare"
+                    android:text='@{(share!=null)?share.link:""}'
+                    android:textAllCaps="false"
+                    android:autoLink="all"
+                    android:linksClickable="true"
+                    android:textColorLink="@color/orange"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/_13sdp"
+                    app:customTypeface="@string/galano_medium" />
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

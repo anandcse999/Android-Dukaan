@@ -1,0 +1,77 @@
+{
+   "status":"success",
+   "message":"",
+   "header":"Mano Super Market",
+   "share":{
+      "title":"Share More to Earn More",
+      "sub_title":"Your customers can visit your online store and place the orders from this link.",
+      "link":"sellplus.com/mano"
+   },
+   "overview":{
+      "name":"Overview",
+      "items":[
+         {
+            "title":"ORDERS",
+            "value":"33"
+         },
+         {
+            "title":"Total Sales",
+            "value":"₹2,918"
+         },
+         {
+            "title":"STORE VIEWS",
+            "value":"301"
+         },
+         {
+            "title":"PRODUCT VIEWS",
+            "value":"19,121"
+         }
+      ]
+   },
+   "orders":{
+      "name":"Active Orders",
+      "types":[
+         {
+            "title":"Pending",
+            "value":"129",
+            "details":[
+               {
+                  "id":"Order #1238",
+                  "is_new":true,
+                  "date":"Today,10.02 PM",
+                  "count":"1 Item",
+                  "price":"₹100",
+                  "transaction_status":false,
+                  "transaction":"COD"
+               },
+               {
+                  "id":"Order #1258",
+                  "is_new":true,
+                  "date":"Jan 10,10.52 PM",
+                  "count":"1 Item",
+                  "price":"₹500",
+                  "transaction_status":true,
+                  "transaction":"PAID"
+               },
+               {
+                  "id":"Order #1138",
+                  "is_new":false,
+                  "date":"Jan 20,10.02 PM",
+                  "count":"1 Item",
+                  "price":"₹400",
+                  "transaction_status":true,
+                  "transaction":"PAID"
+               }
+            ]
+         },
+         {
+            "title":"Accepted",
+            "value":"150"
+         },
+         {
+            "title":"Shipped",
+            "value":"100"
+         }
+      ]
+   }
+}

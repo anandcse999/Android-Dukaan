@@ -1,0 +1,6 @@
+<resources>
+
+    <declare-styleable name="CustomTextView">
+        <attr name="customTypeface" format="string" />
+    </declare-styleable>
+</resources>
